@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+@media all and (min-width: 960px){
+	.content{
+		font-family: 'Amatic SC', sans-serif;
+	}
+	.content a{
+		color: #E4E2E2;
+		cursor: pointer;
+	}
+	.main{
+		margin: 0 20%;
+		font-size: 30px;
+		color: #E4E2E2;
+		border: solid 2px black;
+		background-color: #4394B1;
+	}
+	.uolist3{
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		color: black;
+		transition: all .5s ease-in-out 0s;
+	}
+	
+	.menudrop{
+		font-size: 22px;
+		border: solid 2px black;
+		background-color: #2B6F87;
+		color: #E4E2E2;
+		margin: 5px 30%;
+	}
+	.content ul li .cross{
+		right: 30.3%;
+	}
+	.sign{
+		right: 30%;
+	}
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+	.content{
+		font-family: 'Amatic SC', sans-serif;
+	}
+	
+	.content a{
+		color: #E4E2E2;
+		cursor: pointer;
+	}
+	.main{
+		margin: 0 20%;
+		font-size: 30px;
+		color: #E4E2E2;
+		border: solid 2px black;
+		background-color: #4394B1;
+	}
+	.uolist3{
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		color: black;
+		transition: all .5s ease-in-out 0s;
+	}
+	.menudrop{
+		font-size: 22px;
+		border: solid 2px black;
+		background-color: #2B6F87;
+		color: #E4E2E2;
+		margin: 5px 30%;
+	}
+	.content ul li .cross{
+		right: 30.4%;
+	}
+	.sign{
+		right: 30%;
+	}
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+	.content{
+		font-family: 'Amatic SC', sans-serif;
+	}
+	
+	.content a{
+		color: #E4E2E2;
+		cursor: pointer;
+	}
+	.main{
+		margin: 0 10%;
+		font-size: 30px;
+		color: #E4E2E2;
+		border: solid 2px black;
+		background-color: #4394B1;
+	}
+	.uolist3{
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		color: black;
+		transition: all .5s ease-in-out 0s;
+	}
+	
+	.menudrop{
+		font-size: 22px;
+		border: solid 2px black;
+		background-color: #2B6F87;
+		color: #E4E2E2;
+		margin: 5px 20%;
+	}
+	.content ul li .cross{
+		right: 26%;
+	}
+	.sign{
+		right: 25%;
+	}
+}
+
+#banner{
+	background-image: url("countriesbanner.jpg");
+}
+
+.content{
+	overflow: hidden;
+}
+
+.content ul li .cname{
+	margin-left: 0px;
+}
+
+.content ul li .cross{
+	transition: all .3s ease-in-out;
+	position: absolute;
+	font-size: 27px;
+	visibility: hidden;
+	opacity: 1;
+	line-height: 37px;
+	transfrom: scale(.1);
+}
+.sign{
+	visibility: visible;
+	opacity: 1;
+	position: absolute;
+	line-height: 37px;
+	transition: all .3s ease-in-out;
+	font-size: 29px;
+}

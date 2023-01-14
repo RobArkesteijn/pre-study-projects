@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Countries</title>
+		<link rel="icon" href="../NXTDES_logo.png">
+		<link href="countriesstyle.css" rel= "stylesheet" type ="text/css">
+		<link href="../globalstyle.css" rel= "stylesheet" type ="text/css">
+		
+		<script src="https://kit.fontawesome.com/ff6fb3a53c.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<header>
+			<div id="foreground"></div>
+			<div id="preloader"></div>
+			<p id="logo1" class="logo"><a class="logolink" href="../index.html">NXTDES</a></p>
+			<div id="plus"><i class="fa-solid fa-bars"></i></div>
+			<div id="side-menu">
+				<p id="min"><i class="fa-solid fa-xmark"></i></p>
+				<ol id="menu-list">
+					<li id="head1" class="head"><a class="headtext" href="../Travel Info/travelinfo.html"><i class="fa-solid fa-circle-info">&nbsp;&nbsp;</i>Travel Info</a><i onclick="SideMenuT();" id="arrow1" class="open-side fa-solid fa-angle-down"></i>
+						<ol class="side-list" id="travel-list1">
+							<li><a class="side-list-text" href="../Travel Info/TM.html">- Travel Mistakes</a></li>
+							<li><a class="side-list-text" href="../Travel Info/BT.html">- Budget Travel</a></li>
+							<li><a class="side-list-text" href="../Travel Info/ST.html">- Solo Travel</a></li>
+						</ol>
+					</li>
+					<li id="head2" class="head"><a class="headtext" href="countries.html"><i class="fa-solid fa-earth-americas">&nbsp;&nbsp;</i>Countries</a><i onclick="SideMenuC();" id="arrow2" class="open-side fa-solid fa-angle-down"></i>
+						<ol class="side-list" id="travel-list2">
+							<li id="sidehead1"><a class="side-list-text" href="France/france.html">- France</a><i onclick="SideMenuFr();" id="s-arrow1" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="france-drop" class="c-drop">
+									<li class="c-side"><a href="France/Monaco/monaco.html">&#8226; Monaco</a></li>
+									<li class="c-side"><a href="France/Nice/nice.html">&#8226; Nice</a></li>
+									<li class="c-side"><a href="France/Paris/paris.html">&#8226; Paris</a></li>
+									<li class="c-side"><a href="#">&#8226; Strasbourg</a></li>
+								</ol>
+							</li>
+							<li id="sidehead2"><a class="side-list-text" href="South-East Asia/Indonesia/indonesia.html">- Indonesia</a><i onclick="SideMenuIn();" id="s-arrow2" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="indo-drop" class="c-drop">
+									<li class="c-side"><a href="South-East Asia/Indonesia/Bali/bali.html">&#8226; Bali</a></li>
+								</ol>
+							</li>
+							<li id="sidehead3"><a class="side-list-text" href="Ireland/ireland.html">- Ireland</a><i onclick="SideMenuIr();" id="s-arrow3" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="ire-drop" class="c-drop">
+									<li class="c-side"><a href="Ireland/Belfast/belfast.html">&#8226; Belfast</a></li>
+									<li class="c-side"><a href="Ireland/Dublin/dublin.html">&#8226; Dublin</a></li>
+									<li class="c-side"><a href="Ireland/Wicklow Mountains/wicklow.html">&#8226; Wicklow Mountains</a></li>
+								</ol>
+							</li>
+							<li id="sidehead4"><a class="side-list-text" href="Luxembourg/luxembourgmain.html">- Luxembourg</a><i onclick="SideMenuLu();" id="s-arrow4" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="lux-drop" class="c-drop">
+									<li class="c-side"><a href="Luxembourg/Luxembourg/luxembourg.html">&#8226; Luxembourg</a></li>
+									<li class="c-side"><a href="Luxembourg/Vianden/vianden.html">&#8226; Vianden</a></li>
+								</ol>
+							</li>
+							<li id="sidehead5"><a class="side-list-text" href="South-East Asia/Malaysia/malaysia.html">- Malaysia</a><i onclick="SideMenuMa();" id="s-arrow5" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="mal-drop" class="c-drop">
+									<li class="c-side"><a href="South-East Asia/Malaysia/Cameron Highlands/cameron.html">&#8226; Cameron Highlands</a></li>
+									<li class="c-side"><a href="South-East Asia/Malaysia/George Town/georgetown.html">&#8226; George Town</a></li>
+									<li class="c-side"><a href="South-East Asia/Malaysia/Kuala Lumpur/kualalumpur.html">&#8226; Kuala Lumpur</a></li>
+									<li class="c-side"><a href="South-East Asia/Malaysia/Langkawi/langkawi.html">&#8226; Langkawi</a></li>
+								</ol>
+							</li>
+							<li id="sidehead6"><a class="side-list-text" href="Malta/malta.html">- Malta</a><i onclick="SideMenuMalta();" id="s-arrow6" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="malta-drop" class="c-drop">
+									<li class="c-side"><a href="#">&#8226; Gozo</a></li>
+									<li class="c-side"><a href="#">&#8226; Valetta</a></li>
+								</ol>
+							</li>
+							<li id="sidehead7"><a class="side-list-text" href="Portugal/portugal.html">- Portugal</a><i onclick="SideMenuPo();" id="s-arrow7" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="port-drop" class="c-drop">
+									<li class="c-side"><a href="Portugal/Faial/faial.html">&#8226; Faial</a></li>
+									<li class="c-side"><a href="Portugal/Flores/flores.html">&#8226; Flores</a></li>
+									<li class="c-side"><a href="Portugal/Lisbon/lisboa.html">&#8226; Lisbon</a></li>
+									<li class="c-side"><a href="Portugal/Porto/porto.html">&#8226; Porto</a></li>
+									<li class="c-side"><a href="Portugal/Sao Miguel/saomiguel.html">&#8226; São Miguel</a></li>
+									<li class="c-side"><a href="Portugal/Terceira/terceira.html">&#8226; Terceira</a></li>
+								</ol>
+							</li>
+							<li><a class="side-list-text" href="South-East Asia/Singapore/singapore.html">- Singapore</a></li>
+							<li id="sidehead8"><a class="side-list-text" href="#">- Spain</a><i onclick="SideMenuSp();" id="s-arrow8" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="sp-drop" class="c-drop">
+									<li class="c-side"><a href="Lanzarote/Lanzarote.html">&#8226; Lanzarote</a></li>
+								</ol>
+							</li>
+							<li id="sidehead9"><a class="side-list-text" href="#">- Sweden</a><i onclick="SideMenuSw();" id="s-arrow9" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="swe-drop" class="c-drop">
+									<li class="c-side"><a href="Stockholm/sweden.html">&#8226; Stockholm</a></li>
+								</ol>
+							</li>
+							<li id="sidehead10"><a class="side-list-text" href="South-East Asia/Thailand/thailand.html">- Thailand</a><i onclick="SideMenuTh();" id="s-arrow10" class="open-side fa-solid fa-angle-down"></i>
+								<ol id="thai-drop" class="c-drop">
+									<li class="c-side"><a href="South-East Asia/Thailand/Ayutthaya/ayutthaya.html">&#8226; Ayutthaya</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Bangkok/bangkok.html">&#8226; Bangkok</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Chiang Mai/chiangmai.html">&#8226; Chiang Mai</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Khao Lak/khaolak.html">&#8226; Khao Lak</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Khao Sok/khaosok.html">&#8226; Khao Sok</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Koh Lanta/kohlanta.html">&#8226; Koh Lanta</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Koh Phi Phi/kohphiphi.html">&#8226; Koh Phi Phi</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Koh Samui/kohsamui.html">&#8226; Koh Samui</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Koh Tao/kohtao.html">&#8226; Koh Tao</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Phuket/phuket.html">&#8226; Phuket</a></li>
+									<li class="c-side"><a href="South-East Asia/Thailand/Railay (Krabi)/railay.html">&#8226; Railay</a></li>
+								</ol>
+							</li>
+						</ol>
+					</li>
+					<li id="head3" class="head"><a class="headtext" href="../Upcoming Destinations/UD.html"><i class="fa-solid fa-plane-departure">&nbsp;&nbsp;</i>Upc. Destinations</a><i onclick="SideMenuUD();" id="arrow3" class="open-side fa-solid fa-angle-down"></i>
+						<ol class="side-list" id="travel-list3">
+							<li><a class="side-list-text" href="../Upcoming Destinations/Crete/crete.html">- Crete</a></li>
+							<li><a class="side-list-text" href="#">- Kitzbühel</a></li>
+							<li><a class="side-list-text" href="#">- Klagenfurt</a></li>
+							<li><a class="side-list-text" href="../Upcoming Destinations/Liechtenstein/liechtenstein.html">- Liechtenstein</a></li>
+							<li><a class="side-list-text" href="../Upcoming Destinations/Strasbourg/strasbourg.html">- Strasbourg</a></li>
+							<li><a class="side-list-text" href="../Upcoming Destinations/Vienna/vienna.html">- Vienna</a></li>
+							<li><a class="side-list-text" href="../Upcoming Destinations/Zürich/zürich.html">- Zürich</a></li>
+						</ol>
+					</li>
+				</ol>
+				<p id="logo2">NXTDES</p>
+			</div>
+			<ul>
+				<li><a class="bannerlink" href="../Travel Info/travelinfo.html"><i class="fa-solid fa-circle-info"></i><br>Travel Info&nbsp;<i class="fas fa-caret-right"></i></a>
+					<ul id="travelinfo" class = "uolist1">
+						<li><a class="dropdwn" href="../Travel Info/TM.html">Travel Mistakes</a></li>
+						<li><a class="dropdwn" href="../Travel Info/BT.html">Budget Travel</a></li>
+						<li><a class="dropdwn" href="../Travel Info/ST.html">Solo Travel</a></li>
+					</ul>
+				</li>
+				<li><a class="bannerlink" href="countries.html"><i class="fa-solid fa-earth-americas"></i><br>Countries&nbsp;<i class="fas fa-caret-right"></i></a>
+					<ul id="countries" class = "uolist1">
+						<li id="portugal"><a class="dropdwn" href="Portugal/portugal.html">Portugal&nbsp;<i class="fas fa-caret-right"></i></a>
+							<ul class = "uolist2">
+								<li><a class = "dropdwn2" href="Portugal/Porto/porto.html">Porto</a></li>
+								<li><a class = "dropdwn2" href="Portugal/Lisbon/lisboa.html">Lisbon</a></li>
+								<li><a class = "dropdwn2" href="Portugal/Sao Miguel/saomiguel.html">Sao Miguel</a></li>
+								<li><a class = "dropdwn2" href="Portugal/Terceira/terceira.html">Terceira</a></li>
+								<li><a class = "dropdwn2" href="Portugal/Faial/faial.html">Faial</a></li>
+								<li><a class = "dropdwn2" href="Portugal/Flores/flores.html">Flores</a></li>
+							</ul>
+						</li>
+						<li id="france"><a class="dropdwn" href="France/france.html">France&nbsp;<i class="fas fa-caret-right"></i></a>
+							<ul class = "uolist2">
+								<li><a class = "dropdwn2" href="France/Nice/nice.html">Nice</a></li>
+								<li><a class = "dropdwn2" href="France/Monaco/monaco.html">Monaco</a></li>
+								<li><a class = "dropdwn2" href="France/Paris/paris.html">Paris</a></li>
+							</ul>
+						</li>
+						<li id="seasia"><a class="dropdwn" href="South-East Asia/asia.html">South-East Asia&nbsp;<i class="fas fa-caret-right"></i></a>
+							<ul class = "uolist2">
+								<li id="thailand"><a class = "dropdwn2" href="South-East Asia/Thailand/thailand.html">Thailand&nbsp;<i class="fas fa-caret-right"></i></a>
+									<ul class="uolist4">
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Ayutthaya/ayutthaya.html">Ayutthaya</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Bangkok/bangkok.html">Bangkok</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Chiang Mai/chiangmai.html">Chiang Mai</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Khao Lak/khaolak.html">Khao Lak</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Khao Sok/khaosok.html">Khao Sok</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Koh Lanta/kohlanta.html">Koh Lanta</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Koh Phi Phi/kohphiphi.html">Koh Phi Phi</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Koh Samui/kohsamui.html">Koh Samui</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Koh Tao/kohtao.html">Koh Tao</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Phuket/phuket.html">Phuket</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Thailand/Railay (Krabi)/railay.html">Railay(Krabi)</a></li>
+									</ul>
+								</li>
+								<li><a class = "dropdwn2" href="South-East Asia/Singapore/singapore.html">Singapore</a></li>
+								<li id="malaysia"><a class = "dropdwn2" href="South-East Asia/Malaysia/malaysia.html">Malaysia&nbsp;<i class="fas fa-caret-right"></i></a>
+									<ul class="uolist4">
+										<li><a class="dropdwn3" href="South-East Asia/Malaysia/Cameron Highlands/cameron.html">Cameron Highlands</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Malaysia/George Town/georgetown.html">George Town</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Malaysia/Kuala Lumpur/kualalumpur.html">Kuala Lumpur</a></li>
+										<li><a class="dropdwn3" href="South-East Asia/Malaysia/Langkawi/langkawi.html">Langkawi</a></li>
+									</ul>
+								</li>
+								<li id="indonesia"><a class = "dropdwn2" href="South-East Asia/Indonesia/indonesia.html">Indonesia&nbsp;<i class="fas fa-caret-right"></i></a>
+									<ul class="uolist4">
+										<li><a class="dropdwn3" href="South-East Asia/Bali/bali.html">Bali</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li id="ireland"><a class="dropdwn" href="Ireland/ireland.html">Ireland&nbsp;<i class="fas fa-caret-right"></i></a>
+							<ul class = "uolist2">
+								<li><a class = "dropdwn2" href="Ireland/Dublin/dublin.html">Dublin</a></li>
+								<li><a class = "dropdwn2" href="Ireland/Wicklow Mountains/wicklow.html">Wicklow Mountains</a></li>
+								<li><a class = "dropdwn2" href="Ireland/Belfast/belfast.html">Belfast</a></li>
+							</ul>
+						</li>
+						<li id="luxembourg"><a class="dropdwn" href="Luxembourg/luxembourgmain.html">Luxembourg&nbsp;<i class="fas fa-caret-right"></i></a>
+							<ul class = "uolist2">
+								<li><a class = "dropdwn2" href="Luxembourg/Luxembourg/luxembourg.html">Luxembourg</a></li>
+								<li><a class = "dropdwn2" href="Luxembourg/Vianden/vianden.html">Vianden</a></li>
+							</ul>
+						</li>
+						<li id="spain"><a class="dropdwn" href="Lanzarote/Lanzarote.html">Lanzarote</a></li>
+						<li id="sweden"><a class="dropdwn" href="Stockholm/sweden.html">Stockholm</a></li>
+						<li id="malta"><a class="dropdwn" href="Malta/malta.html">Malta</a></li>
+					</ul>
+
+				</li>
+				<li><a class="bannerlink" href="../Upcoming Destinations/UD.html"><i class="fa-solid fa-plane-departure"></i><br>Upcoming&nbsp;<i class="fas fa-caret-right"></i></a>
+					<ul id="updes" class = "uolist1">
+						<li><a class="dropdwn" href="../Upcoming Destinations/Crete/crete.html">Crete</a></li>
+						<li><a class="dropdwn" href="../Upcoming Destinations/Zürich/zürich.html">Zürich</a></li>
+						<li><a class="dropdwn" href="../Upcoming Destinations/Strasbourg/strasbourg.html">Strasbourg</a></li>
+						<li><a class="dropdwn" href="../Upcoming Destinations/Liechtenstein/liechtenstein.html">Liechtenstein</a></li>
+						<li><a class="dropdwn" href="../Upcoming Destinations/Vienna/vienna.html">Vienna</a></li>
+					</ul>
+				</li>
+			</ul>
+		</header>
+		<img id="neth" class="language" src="../netherlands.png" alt="dutch-flag">
+		<img id="brit" class="language" src="../united-kingdom.png" alt="british-flag">
+		<p class="location"><a class="loclink" href="countries.html">Countries</a></p>
+		<div id="banner"></div>
+		<h2 class="bannertext"><div class="thisis">Countries</div></h2>
+		<div class="content">
+			<h3 class="about">-OVERVIEW OF ALL COUNTRIES AND SITES (ALPHABETICAL ORDER)-</h3>
+			<ul>
+				<li class="main"><a class="cname" href="France/france.html">France</a><a class="sign" id="n1"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n1-1">&nbsp;<i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="france2" class="uolist3">
+						<li class="menudrop"><a href="France/Monaco/monaco.html">Monaco</a></li>
+						<li class="menudrop"><a href="France/Nice/nice.html">Nice</a></li>
+						<li class="menudrop"><a href="France/Paris/paris.html">Paris</a></li>
+						<li class="menudrop"><a href="../Upcoming Destinations/Strasbourg/strasbourg.html">Strasbourg</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="South-East Asia/Indonesia/indonesia.html">Indonesia</a><a class="sign" id="n2"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n2-2"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="indo2" class="uolist3">
+						<li class="menudrop"><a href="South-East Asia/Bali/bali.html">Bali</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="Ireland/ireland.html">Ireland</a><a class="sign" id="n3"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n3-3"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="ireland2" class="uolist3">
+						<li class="menudrop"><a href="Ireland/Belfast/belfast.html">Belfast</a></li>
+						<li class="menudrop"><a href="Ireland/Dublin/dublin.html">Dublin</a></li>
+						<li class="menudrop"><a href="Ireland/Wicklow Mountains/wicklow.html">Wicklow Mountains</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="Luxembourg/luxembourgmain.html">Luxembourg</a><a class="sign" id="n4"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n4-4"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="luxem2" class="uolist3">
+						<li class="menudrop"><a href="Luxembourg/Luxembourg/luxembourg.html">Luxembourg</a></li>
+						<li class="menudrop"><a href="Luxembourg/Vianden/vianden.html">Vianden</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="South-East Asia/Malaysia/malaysia.html">Malaysia</a><a class="sign" id="n5"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n5-5"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="malay2" class="uolist3">
+						<li class="menudrop"><a href="South-East Asia/Malaysia/Cameron Highlands/cameron.html">Cameron Highlands</a></li>
+						<li class="menudrop"><a href="South-East Asia/Malaysia/George Town/georgetown.html">George Town</a></li>
+						<li class="menudrop"><a href="South-East Asia/Malaysia/Kuala Lumpur/kualalumpur.html">Kuala Lumpur</a></li>
+						<li class="menudrop"><a href="South-East Asia/Malaysia/Langkawi/langkawi.html">Langkawi</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="Malta/malta.html">Malta</a><a class="sign" id="n6"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n6-6"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="malta2" class="uolist3">
+						<li class="menudrop"><a href="#">Gozo</a></li>
+						<li class="menudrop"><a href="#">Valletta</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="Portugal/portugal.html">Portugal</a><a class="sign" id="n7"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n7-7"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="port2" class="uolist3">
+						<li class="menudrop"><a href="Portugal/Faial/faial.html">Faial</a></li>
+						<li class="menudrop"><a href="Portugal/Flores/flores.html">Flores</a></li>
+						<li class="menudrop"><a href="Portugal/Lisbon/lisboa.html">Lisbon</a></li>
+						<li class="menudrop"><a href="Portugal/Porto/porto.html">Porto</a></li>
+						<li class="menudrop"><a href="Portugal/Sao Miguel/saomiguel.html">São Miguel</a></li>
+						<li class="menudrop"><a href="Portugal/Terceira/terceira.html">Terceira</a></li>
+					</ul>
+				<br>
+				<li id="sing2" class="main"><a href="South-East Asia/Singapore/singapore.html">Singapore</a></li>
+				<br>
+				<li class="main"><a class="cname" href="#">Spain</a><a class="sign" id="n10"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n10-10"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="spain2" class="uolist3">
+						<li class="menudrop"><a href="Lanzarote/Lanzarote.html">Lanzarote</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="#">Sweden</a><a class="sign" id="n8"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n8-8"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="sweden2" class="uolist3">
+						<li class="menudrop"><a href="Stockholm/sweden.html">Stockholm</a></li>
+					</ul>
+				<br>
+				<li class="main"><a class="cname" href="South-East Asia/Thailand/thailand.html">Thailand</a><a class="sign" id="n9"><i class="fa-solid fa-bars"></i></a><a class="cross" id="n9-9"><i class="fa-solid fa-xmark"></i></a></li>
+					<ul id="thai2" class="uolist3">
+						<li class="menudrop"><a href="South-East Asia/Thailand/Ayutthaya/ayutthaya.html">Ayutthaya</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Bangkok/bangkok.html">Bangkok</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Chiang Mai/chiangmai.html">Chiang Mai</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Khao Lak/khaolak.html">Khao Lak</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Khao Sok/khaosok.html">Khao Sok</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Koh Lanta/kohlanta.html">Koh Lanta</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Koh Phi Phi/kohphiphi.html">Koh Phi Phi</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Koh Samui/kohsamui.html">Koh Samui</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Koh Tao/kohtao.html">Koh Tao</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Phuket/phuket.html">Phuket</a></li>
+						<li class="menudrop"><a href="South-East Asia/Thailand/Railay (Krabi)/railay.html">Railay (Krabi)</a></li>
+					</ul>
+			</ul>
+		</div>
+		<footer>
+			<p><a href="https://www.polarsteps.com/RobArkesteijn/" class="contact" target="_blank" title="Link to Polarsteps"><i class="fa-regular fa-compass"></i>&nbsp;&nbsp;Polarsteps&nbsp;</a> 
+				
+			|&nbsp;<a href="mailto:nxtdes@outlook.com" target="_blank" class="contact" title="Link to Email">&nbsp;<i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;E-Mail</a></p> 
+		</footer>
+		<script src="../myscripts.js"></script>
+		<script src="../globalscript.js"></script>
+	</body>
+</html>
