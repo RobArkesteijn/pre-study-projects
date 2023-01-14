@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+header{
+	height: 20vh;
+	width: 100%;
+	position: fixed;
+	transition: all .3s ease-in-out 0s;
+}
+
+header h1{
+	color: black;
+	font-size: 14vh;
+	line-height: 20vh;
+	font-family: 'Tangerine', cursive;
+	transition: all .3s ease-in-out 0s;
+}
+
+.switchlight{
+	height: 4vh;
+	width: 4vh;
+	border-radius: 100px;
+	position: absolute;
+	cursor: pointer;
+	transition: all .2s ease-in-out 0s;
+}
+
+#light{
+	top: 8vh;
+	left: 2vh;
+	background-color: white;
+	border: solid 2px black;
+}
+
+#dark{
+	top: 8vh;
+	right: 2vh;
+	background-color: black;
+	border: solid 2px black;
+}
+
+.switchlight:hover{
+	transform: scale(1.2);
+}
+
+#sidehovermenu{
+	opacity: 0;
+	height: 100%;
+	width: 15vw;
+	border-right: solid 2px black;
+	position: fixed;
+	text-align: left;
+	font-family: 'Libre Baskerville', serif;
+	transition: all .3s ease-in-out 0s;
+	z-index: 2;
+	margin-left: -15vw;
+}
+
+#sidehovermenu h2{
+	padding: 10px 0;
+}
+
+#sidehovermenu ul li{
+	padding: 2.3vh 0;
+	transition: all .1s ease-in-out 0s;
+	font-size: 2.8vh;
+	cursor: pointer;
+	user-select: none;
+}
+
+#sidehovermenu ul li:hover{
+	transform: scale(1.2);
+	font-weight: bold;
+}
+
+main{
+	position: absolute;
+	margin-top: 20vh;
+	height: 70vh;
+	width: 100%;
+	border-top: solid 2px black;
+	transition: all .3s ease-in-out 0s;
+}
+
+main h2{
+	padding: 3vh 0;
+	font-size: 6vh;
+	transition: all .3s ease-in-out 0s;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	heigth: 10vh;
+	width: 100%;
+	border-top: solid 2px black;
+	transition: all .3s ease-in-out 0s;
+}
+
+footer ul{
+	line-height: 10vh;
+	display: inline-flex;
+	font-size: 2.5vh;
+	transition: all .2s ease-in-out 0s;
+}
+
+footer ul li{
+	user-select: none;
+	font-family: 'Libre Baskerville', serif;
+	list-style: none;
+	padding: 0 3vh;
+	transition: all .1s ease-in-out 0s;
+}
+
+footer ul .city{
+	cursor: pointer;
+}
+
+footer ul .city:hover{
+	transform: scale(1.2);
+}
