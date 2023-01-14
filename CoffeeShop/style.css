@@ -1,0 +1,288 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Tangerine:wght@700&Roboto+Slab&family=Libre+Baskerville&display=swap');
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+body{
+	user-select: none;
+	background-color: whitesmoke;
+}
+
+h1{
+	font-family: 'Tangerine', cursive;
+	font-size: 15vh;
+	
+}
+
+h2{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 6vh;
+}
+
+#menu-icon{
+	display: inherit;
+	position: fixed;
+	top: 0;
+	line-height: 20vh;
+	left: 15vh;
+	color: #D3CDCD;
+	cursor: pointer;
+	transition: all .3s ease-in-out 0s;
+	z-index: 2;
+}
+
+#menu-icon:hover, #contact-icon:hover{
+	color: #FCFBFB;
+}
+
+#contact-icon{
+	position: fixed;
+	top: 0;
+	line-height: 20vh;
+	right: 15vh;
+	color: #D3CDCD;
+	cursor: pointer;
+	transition: all .3s ease-in-out 0s;
+	z-index: 2;
+}
+
+#left-header{
+	top: 0;
+	width: 0;
+	height: 0;
+	border-top: solid 20.3vh #2B0F0E;
+	border-left: solid 50vh #2B0F0E;
+	border-right: solid 20.3vh transparent;
+	border-bottom: solid 0vh transparent;
+	position: fixed;
+	z-index: 2;
+	transition: all .3s ease-in-out 0s;
+}
+
+#menu-list{
+	top: 0;
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 3;
+	left: 0;
+	right: 0;
+	transition: all .3s ease-in-out 0s;
+}
+
+.coffee-type{
+	list-style: none;
+	display: inline;
+	font-family: 'Libre Baskerville', serif;
+	top: 0;
+	line-height: 20vh;
+	padding: 0 50px;
+	font-size: 5vh;
+}
+
+.coffee-type a{
+	text-decoration: none;
+	color: #D3CDCD;
+	transition: all .3s ease-in-out 0s;
+}
+
+.coffee-type a:hover, #menu-cancel:hover{
+	color: #FCFBFB;
+}
+
+#menu-cancel{
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	line-height: 20vh;
+	right: 3vw;
+	transition: all .3s ease-in-out 0s;
+	font-size: 6vh;
+	color: #D3CDCD;
+}
+
+#right-header{
+	top: 0;
+	width: 0;
+	height: 0;
+	right: 0;
+	position: fixed;
+	transform: rotateY(180deg);
+	border-top: solid 20.3vh #2B0F0E;
+	border-left: solid 50vh #2B0F0E;
+	border-right: solid 20vh transparent;
+	border-bottom: solid 0vh transparent;
+	z-index: 2;
+	transition: all .3s ease-in-out 0s;
+}
+
+#middle-header{
+	top: 0;
+	width: 100%;
+	height: 20vh;
+	border-bottom: solid 5px #2B0F0E;
+	line-height: 22vh;
+	color: #2B0F0E;
+	position: fixed;
+	background-image: url("vapor.png");
+	background-size: cover;
+	background-position:center center;
+	background-color: #D3CDCD;
+}
+
+#side-menu{
+	position: fixed;
+	float: left;
+	top: 40%;
+	list-style: none;
+	margin-left: 10px;
+}
+
+#side-menu li{
+	font-family: 'Libre Baskerville', cursive;
+	padding: 10px;
+	background-color: #2B0F0E;
+	margin-bottom: 10px;
+	cursor: pointer;
+	transition: all .2s ease-in-out 0s;
+}
+
+#side-menu li a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+#side-menu li:hover{
+	background-color: #4D3534;
+}
+
+main{
+	user-select: text;
+	margin: 25vh 17.5% 5vh 17.5%;
+	width: 65%;
+}
+
+main ul{
+	display: inline-flex;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+main ul li{
+	display: inline;
+	font-family: 'dosis', serif;
+	transition: all .2s ease-in-out 0s;
+}
+
+main .main-titles{
+	font-size: 3vh;
+	font-weight: 600;
+	color: #2B0F0E;
+	margin-bottom: 10px;
+}
+
+main .big-titles{
+	font-size: 4vh;
+	font-weight: 600;
+	color: #2B0F0E;
+	margin-bottom: 10px;
+}
+
+main img{
+	cursor: pointer;
+}
+
+#cof-bean-mix{
+	margin: 0px 10px;
+	width: 60vw;
+	height: auto;
+	border: solid 2px #4D3534;
+	transition: all .2s ease-in-out 0s;
+}
+
+#cof-bean-mix:hover{
+	width: 61vw;
+	border: solid 2px #2B0F0E;
+	box-shadow: 0px 0px 5px 2px #2B0F0E;
+	margin: 0 10px -1vh 2.6px;
+}
+
+#dark-cap, #black-cof{
+	margin: 0px 10px;
+	height: 40vh;
+	width: auto;
+	border: solid 2px #4D3534;
+	transition: all .2s ease-in-out 0s;
+}
+
+#dark-cap:hover, #black-cof:hover{
+	height: 41vh;
+	border: solid 2px #2B0F0E;
+	box-shadow: 0px 0px 5px 2px #2B0F0E;
+	margin: 0 10px -1vh 2.6px;
+}
+
+#cinnamon-cap, #cof-milk, #regular-cap{
+	height: 60vh;
+	width: auto;
+	border: solid 2px #4D3534;
+	margin: 0px 10px;
+	transition: all .2s ease-in-out 0s;
+}
+
+#cinnamon-cap:hover, #cof-milk:hover, #regular-cap:hover{
+	height: 61vh;
+	border: solid 2px #2B0F0E;
+	box-shadow: 0px 0px 5px 2px #2B0F0E;
+	margin: 0 10px -1vh 2.6px;
+}
+
+#ready-cof{
+	width: 60vw;
+	height: auto;
+	border: solid 2px #4D3534;
+	margin: 0 10px;
+	transition: all .2s ease-in-out 0s;
+}
+
+#ready-cof:hover{
+	width: 61vw;
+	border: solid 2px #2B0F0E;
+	box-shadow: 0px 0px 5px 2px #2B0F0E;
+	margin: 0 10px -1vh 2.6px;
+}
+
+#whitespace{
+	width: 100%;
+	height: 10vh;
+}
+
+footer{
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: 8vh;
+	background-color: #2B0F0E;
+	color: whitesmoke;
+	font-size: 2.5vh;
+}
+
+footer p a{
+	text-decoration: none;
+	list-style: none;
+	line-height: 8vh;
+	color: #D3CDCD;
+	font-family: 'Libre Baskerville', sans-serif;
+}
+
+footer p a:hover{
+	color: #FCFBFB;
+}
+
