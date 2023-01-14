@@ -1,0 +1,837 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Fredericka+the+Great&family=Lato:wght@300&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	background-color: white;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@media all and (min-width: 960px){
+	#banner{
+		height: 65vh;
+		margin-top: 16vh;
+	}
+	.bannertext{
+		margin-top: -40vh;
+		font-size: 50px;
+	}
+	.bannertext .thisis{
+	text-shadow: 3px 3px 1px #2B6F87;
+	}
+	header{
+		height: 16vh;
+	}
+	header .logo{
+		margin-left: 20px;
+		font-size: 5vw;
+		line-height: 15.5vh;
+		float: left;
+	}
+	header ul li .bannerlink{
+		font-size: 20px;
+		margin: 4vh 80px 0 80px;
+	}
+	header ul li ul li .dropdwn{
+		font-size: 19px;
+	}
+	header ul li ul li{
+		width: 135px;
+	}
+	header ul{
+		justify-content: flex-end;
+	}
+	header ul li #travelinfo{
+		visibility: hidden;
+		margin-left: 44px;
+		top: 10.5vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 4vh 5px 5px 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li:hover #travelinfo{
+		visibility: visible;
+		top: 12vh;
+		transition: all 0.5s ease-in-out 0s;
+		opacity: 1;
+	}
+	header ul li #countries{
+		visibility: hidden;
+		margin-left: 40px;
+		top: 10.5vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 4vh 5px 5px 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li:hover #countries{
+		visibility: visible;
+		top: 12vh;
+		transition: all 0.5s ease-in-out 0s;
+		opacity: 1;
+	}
+	header ul li #updes{
+		visibility: hidden;
+		margin-left: 40px;
+		top: 10.5vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 4vh 5px 5px 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li:hover #updes{
+		visibility: visible;
+		top: 12vh;
+		transition: all 0.5s ease-in-out 0s;
+		opacity: 1;
+	}
+	header ul li ul li ul li .dropdwn2{
+		font-size: 18px;
+	}
+	.language{
+		top: 18vh;
+		width: 50px;
+	}
+	#neth{
+		margin-right: 53px;
+	}
+	.location{
+		margin-top: 15px;
+		font-size: 18px
+	}
+	.about{
+		font-size: 40px;
+	}
+	.text{
+		font-size: 20px
+	}
+	footer{
+		font-size: 15px;
+	}
+	#plus{
+		display: none;
+	}
+	.swaplight{
+		position: absolute;
+		left: 2vw;
+		top: 85vh;
+		font-size: 40px;
+		transition: all .3s ease-in-out 0s;
+		cursor: pointer;
+	}
+	
+	#sun{
+		visibility: hidden;
+		opacity: 0;
+		color: gold;
+	}
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+	#banner{
+		height: 40vh;
+		margin-top: 15vh;
+	}
+	.bannertext{
+		margin-top: -24vh;
+		font-size: 35px;
+	}
+	.bannertext .thisis{
+	text-shadow: 2px 2px 1px #2B6F87;
+	}
+	header{
+		height: 15vh;
+	}
+	header .logo{
+		margin-left: 20px;
+		font-size: 8vw;
+		line-height: 15vh;
+		float: left;
+	}
+	header ul li .bannerlink{
+		font-size: 18px;
+		margin-top: 3.5vh;
+		padding: 0px 3.3vw;
+	}
+	header ul li ul li .dropdwn{
+		font-size: 17px;
+	}
+	header ul li ul li{
+		width: 130px;
+	}
+	header ul{
+		justify-content: flex-end;
+	}
+	header ul li #travelinfo{
+		visibility: hidden;
+		margin-left: 0;
+		top: 10vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li #countries{
+		visibility: hidden;
+		margin-left: 0;
+		top: 10vh;
+		position: absolute;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li #updes{
+		visibility: hidden;
+		margin-left: 0;
+		top: 10vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li ul li ul li .dropdwn2{
+		font-size: 17px;
+	}
+	.language{
+		top: 17vh;
+		width: 45px;
+	}
+	#neth{
+		margin-right: 48px;
+	}
+	.location{
+		margin-top: 10px;
+		font-size: 18px
+	}
+	.about{
+		font-size: 35px;
+	}
+	.text{
+		font-size: 18px
+	}
+	footer{
+		font-size: 13px;
+	}
+	#plus{
+		display: none;
+	}
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+	html{
+	overflow: scroll;
+	overflow-x: hidden;
+	}
+	::-webkit-scrollbar{
+	width: 0px;
+	}
+
+	::-webkit-scrollbar-thumb{
+	background: #FF000000;
+	}
+	#banner{
+		height: 30vh;
+		margin-top: 10vh;
+	}
+	.bannertext{
+		margin-top: -17vh;
+		font-size: 25px;
+	}
+	.bannertext .thisis{
+		text-shadow: 1.5px 1.5px 1px #2B6F87;
+	}
+	header{
+		height: 10vh;
+	}
+	header .logo{
+		font-size: 45px;
+		line-height: 10vh;
+		left: 0;
+		right: 0;
+		transition: all .3s ease-in-out 0s;
+	}
+	header ul li .bannerlink{
+		font-size: 18px;
+		margin-top: 10vh;
+		padding: 0px 3.3vw;
+	}
+	header ul li ul li .dropdwn{
+		font-size: 15px;
+	}
+	header ul li ul li{
+		width: 120px;
+	}
+	header ul{
+		justify-content: space-between;
+		visibility: hidden;
+	}
+	header ul li #travelinfo{
+		visibility: hidden;
+		margin-left: 0;
+		top: 15vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+		
+	}
+	header ul li #countries{
+		visibility: hidden;
+		margin-left: 0;
+		top: 15vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li #updes{
+		visibility: hidden;
+		margin-left: 0;
+		top: 15vh;
+		position: absolute;
+		background-color: #4394B1;
+		padding: 5px;
+		border-radius: 0 0 4px 4px;
+		opacity: 0;
+		display: block;
+	}
+	header ul li ul li ul li .dropdwn2{
+		font-size: 17px;
+	}
+	.language{
+		top: 12vh;
+		width: 35px;
+	}
+	#neth{
+		margin-right: 38px;
+	}
+	.location{
+		margin-top: 25px;
+		font-size: 18px
+	}
+	.about{
+		font-size: 30px;
+	}
+	.text{
+		font-size: 16px
+	}
+	footer{
+		font-size: 11px;
+	}
+}
+
+header{
+	font-family: 'Amatic SC', sans-serif;
+	width: 100%;
+	background-color: #4394B1;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	border-bottom: solid 2px whitesmoke;
+	color: #E4E2E2;
+}
+
+header .logo{
+	position: absolute;
+	font-family: 'Fredericka the Great', cursive;
+	text-shadow: 2px 2px 0.2px #2B6F87;
+}
+
+.logolink{
+	color: #E4E2E2;
+	transition: all .2s ease-in-out 0s;
+}
+
+.logolink:hover{
+	color: whitesmoke;
+}
+
+header ul{
+	display: flex;
+}
+
+header ul .bannerlink{
+	transition: all .5s ease-in-out 0s;
+}
+
+header ul .bannerlink:hover{
+	text-shadow: 1px 1px 2px #2B6F87;
+	color: whitesmoke;
+}
+
+header ul li .bannerlink{
+	display: block;
+	line-height: 4vh;
+	color: #E4E2E2;
+}
+
+header ul li ul li{
+	border-radius: 4px;
+}
+
+header ul li ul li .dropdwn{
+	display: block;
+	color: #E4E2E2;
+	padding: 12px 18px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+header ul li ul li .dropdwn:hover{
+	background-color: #2B6F87;
+	text-shadow: 1px 1px 1px #4394B1;
+	color: whitesmoke;
+}
+
+header ul li ul li ul{
+}
+
+header ul li ul #portugal .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0px 4px 4px 0px;
+	opacity: 0;
+	top: 4vh;
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #portugal:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #france .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: calc(48px + 4vh);
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #france:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #seasia .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: calc(96px + 4vh);
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #seasia:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #ireland .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: calc(144px + 4vh);
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #ireland:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #luxembourg .uolist2{
+	visibility: hidden;
+	position: absolute;
+	background-color: #2B6F87;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: calc(192px + 4vh);
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #luxembourg:hover .uolist2{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+
+header ul li ul li ul li .dropdwn2{
+	display: block;
+	color: #E4E2E2;
+	padding: 8px 12px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+header ul li ul li ul li .dropdwn2:hover{
+	background-color: #4394B1;
+	text-shadow: 1px 1px 2px #2B6F87;
+	color: whitesmoke;
+}
+
+header ul li ul #seasia .uolist2 #thailand .uolist4{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 5px;
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #seasia .uolist2 #thailand:hover .uolist4{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #seasia .uolist2 #malaysia .uolist4{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 83px;
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #seasia .uolist2 #malaysia:hover .uolist4{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul #seasia .uolist2 #indonesia .uolist4{
+	visibility: hidden;
+	position: absolute;
+	background-color: #4394B1;
+	padding: 5px;
+	border-radius: 0 4px 4px 0px;
+	opacity: 0;
+	top: 121px;
+	left: 100px;
+	display: block;
+}
+
+header ul li ul #seasia .uolist2 #indonesia:hover .uolist4{
+	visibility: visible;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 1;
+	left: 135px;
+}
+
+header ul li ul li ul li ul li .dropdwn3{
+	display: block;
+	color: #E4E2E2;
+	padding: 8px 12px;
+	transition: all 0.2s ease-in-out 0s;
+}
+
+header ul li ul li ul li ul li .dropdwn3:hover{
+	background-color: #2B6F87;
+	text-shadow: 1px 1px 2px #4394B1;
+	color: whitesmoke;
+}
+
+#foreground{
+	background-color: #00000095;
+	z-index: 3;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease-in-out 0s;
+}
+
+#banner{
+	background-size: cover;
+	background-position:center center;
+	width: 100%;
+	position: static;
+	border-bottom: solid;
+	color:black;
+}
+
+.language{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+	transition: all .05s ease-in-out 0s;
+	border-radius: 100px;
+	right: 2vw;
+}
+
+.language:active{
+	box-shadow: 0 0 0 3px whitesmoke;
+}
+
+.location{
+	position: absolute;
+	z-index: 1;
+	left: 4%;
+	color: whitesmoke;
+	text-shadow: 1px 1px 1px #2B6F87;
+	
+}
+
+.loclink{
+	color: whitesmoke;
+}
+
+.bannertext{
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.bannertext .thisis{
+	color: white;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+.content{
+	margin: 1.5% 10%; 
+	height: 100%;
+	position: static;
+	color: #E4E2E2;
+	padding: 15px 0px;
+}
+
+.about{
+	font-family: 'Amatic SC', sans-serif;
+	padding: 7px;
+	color:black;
+}
+.text{
+	line-height: 30px;	
+	text-align: left;
+	color: black;
+}
+
+footer{
+	padding: 30px 0;
+	background-color: #359ABF95;
+	position:relative;
+	color: #E4E2E2;
+	border-top:solid;
+}
+
+.contact{
+	text-decoration: none;
+	color: white;
+	transition: all 0.1s ease-in-out 0s;
+}
+.contact:hover{
+	text-shadow: 1px 1px .1px #2B6F87;
+}
+
+#preloader{
+	background: #4394B190 url("loader.gif") no-repeat center center;
+	background-size: 55%;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	transition: all .3s ease-in-out 0s;
+}
+
+#plus{
+	position: fixed;
+	z-index: 2;
+	color: #E4E2E2;
+	font-size: 30px;
+	padding: 0 5px;
+	line-height: 10vh;
+	margin-left: 15px;
+	cursor: pointer;
+	transition: all .3s ease-in-out 0s;
+	visibility: visible;
+	opacity: 100%;
+}
+
+#plus:hover{
+	text-shadow: 1px 1px 1px #2B6F87;
+	color: whitesmoke;
+}
+
+#plus:active{
+	opacity: 0;
+}
+
+#side-menu{
+	position: fixed;
+	z-index: 5;
+	height: 93%;
+	width: 0%;
+	background-color: #4394B1;
+	font-size: 20px;
+	color: #E4E2E2;
+	line-height: 60px;
+	transition: all .3s ease-in-out 0s;
+	visibility: hidden;
+	opacity: 0;
+	overflow: scroll;
+}
+
+#side-menu #min{
+	font-size: 30px;
+	cursor: pointer;
+	transition: all .1s ease-in-out 0s;
+}
+
+#side-menu #min:active{
+	text-shadow: 1px 1px 1px #2B6F87;
+	color: whitesmoke;
+	opacity: 0;
+}
+
+#menu-list{
+	font-size: 16px;
+}
+
+#menu-list .head{
+	transition: all .1s ease-in-out 0s;
+	cursor: pointer;
+	text-align: left;
+	width: 90%;
+	border-bottom: solid 1px whitesmoke;
+	margin-left: 10px;
+	font-size: 18px;
+}
+
+#menu-list .headtext{
+	
+}
+
+#menu-list .head:active{
+	text-shadow: 1px 1px 1px #4394B1;
+	color: whitesmoke;
+}
+
+#menu-list a{
+	color: #E4E2E2;
+}
+
+.open-side{
+	font-size: 20px;
+	position: absolute;
+	float: right;
+	right: 10px;
+	margin-top: 20px;
+	transition: all .3s ease-in-out 0s;
+	opacity: 50%;
+}
+
+#logo2{
+	background-color: #4394B1;
+	color: whitesmoke;
+	font-size: 25px;
+	font-family: 'Fredericka the Great', cursive;
+	text-shadow: 2px 2px 0.2px #2B6F87;
+	width: 0;
+	position: fixed;
+	z-index: 4;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	border-top: solid 2px whitesmoke;
+	transition: all .3s ease-in-out 0s;
+}
+
+.side-list{
+	transition: all .2s linear 0s;
+	line-height: 0px;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.side-list .open-side{
+	line-height: 10px;
+	font-size: 15px;
+	margin-right: 2px;
+}
+
+.side-list-text{
+	transition: all .1s linear 0s;
+	padding: 10px 20px;
+	font-size: 18px;
+}
+
+.side-list-text:active{
+	background-color: #4394B1;
+	text-shadow: 1px 1px 1px #2B6F87;
+}
+
+.c-drop{
+	visibility: hidden;
+	line-height: 0px;
+	opacity: 0;
+	transition: all .2s linear 0s;
+}
+
+.c-side{
+	margin-left: 40px;
+	font-size: 16px;
+	transition: all .1s linear 0s;
+}
+
+.c-side:active{
+	background-color: #4394B1;
+}

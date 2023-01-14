@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+#banner{
+	background-image: url("frontpage.jpg");
+	transition: all 1s ease-in-out 0s;
+}
+
+#invisible{
+	display: none;
+}
+
+#welcome{
+	transition: all .3s ease-in-out 0s;
+}
+@media all and (min-width: 960px){
+	#hdrie1{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 60px;
+	}
+	#text1{
+	font-size: 35px;
+	font-family: 'Amatic SC', sans-serif;
+	text-align: center;
+	line-height: 50px;
+	}
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+	#hdrie1{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 50px;
+	}
+	#text1{
+	font-size: 30px;
+	font-family: 'Amatic SC', sans-serif;
+	text-align: center;
+	line-height: 50px;
+	}
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+	#hdrie1{
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 32px;
+	}
+	#text1{
+	font-size: 23px;
+	font-family: 'Amatic SC', sans-serif;
+	text-align: center;
+	line-height: 50px;
+	}
+}
+
